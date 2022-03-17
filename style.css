@@ -1,0 +1,94 @@
+/* body {
+  background-color: rgb(240, 240, 240);
+} */
+
+html, body {
+  width: 100%;
+  height:100%;
+}
+
+body {
+  background: linear-gradient(-45deg, #6EBF8B, #DADBBD);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  font-family: 'Open Sans', sans-serif;
+  color: black
+}
+
+@keyframes gradient {
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+}
+
+h1, h2 {
+  font-family: 'Space Mono', monospace;
+  color: #D82148
+}
+
+a {
+  color: #DADBBD;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #151D3B;
+}
+
+.container {
+  padding: 10px;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.img-circle {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.btn-green {
+  background-color: #6EBF8B;
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+}
+
+.btn-green:hover {
+  background-color: #151D3B;
+  color: white;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-inline i {
+  font-size: 40px;
+}
